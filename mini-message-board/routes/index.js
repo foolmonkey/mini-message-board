@@ -25,9 +25,15 @@ router.get("/", function (req, res, next) {
 });
 
 router.post("/new", function (req, res, next) {
+  var messageAuthor = req.body.messageAuthor;
+
+  if (messageAuthor == "") {
+    messageAuthor = "Anonymous User";
+  }
+
   messages.push({
     text: req.body.messageText,
-    user: req.body.messageAuthor,
+    user: messageAuthor,
     added: new Date(),
   });
 
