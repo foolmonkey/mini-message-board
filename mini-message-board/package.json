@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "date-fns": "^2.15.0",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-handlebars": "^5.1.0",

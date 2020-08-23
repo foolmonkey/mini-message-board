@@ -6,3 +6,36 @@ body {
 a {
   color: #00b7ff;
 }
+
+/* Message */
+.messages-list {
+  width: 100%;
+}
+
+.message {
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(161, 161, 161);
+  box-shadow: 0 0 5px rgb(212, 212, 212);
+}
+
+.message-body {
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.message-user {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+.message-published {
+  font-size: 14px;
+  display: inline-block;
+  color: rgb(97, 97, 97);
+}

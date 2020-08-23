@@ -1,4 +1,15 @@
-<div>
-  <h1>title</h1>
-  <p>Welcome to {{title}}</p>
-</div>
+<main>
+  <h1>{{title}}</h1>
+  <section class="messages-list">
+
+    {{#each messages}}
+    <div class="message">
+      <p class="message-user">{{this.user}}</p>
+      <p class="message-published">{{dateformat this.added}}</p>
+      <p class="message-body">{{this.text}}</p>
+
+    </div>
+    {{/each}}
+
+  </section>
+</main>
