@@ -3,6 +3,11 @@ var router = express.Router();
 
 const messages = [
   {
+    text: "See more code at github.com/foolmonkey",
+    user: "Andy T",
+    added: new Date(),
+  },
+  {
     text: "Hi there!",
     user: "Amando",
     added: new Date(),
